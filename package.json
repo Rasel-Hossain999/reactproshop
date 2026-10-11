@@ -1,16 +1,12 @@
 {
-  "name": "react_project",
+  "name": "project",
   "version": "1.0.0",
   "description": "MERN Shoping cart app",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node backend/seeder",
-    "data:destory": "node backend/seeder -d"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "author": "",
   "license": "ISC",
